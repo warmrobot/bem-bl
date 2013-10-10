@@ -738,3 +738,8 @@ if (typeof define !== 'undefined' && define.amd) {
 } else {
     window.FastClick = FastClick;
 }
+
+// инициализация
+document.addEventListener('DOMContentLoaded', function() {
+    FastClick.attach(document.body);
+});
